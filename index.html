@@ -1,0 +1,24 @@
+<html>
+    <head><title>task</title></head>
+    <script>
+        const currentDate = new Date();
+        function func1(){
+            const time = currentDate.toLocaleTimeString();
+            console.log("Current Time: " + time);
+            
+            
+        }
+        function func(){
+            const date = currentDate.toDateString();
+            console.log("Current Date: " + date);
+            document.getElementById("tex").innerHTML = date;
+        }
+    </script>
+    <body>
+        <button onclick="func1()">time</button>
+        <h3 id="myText"></h3>
+        <button onclick="func()">date</button>
+        <h3 id="tex"></h3>
+
+    </body>
+</html>  
